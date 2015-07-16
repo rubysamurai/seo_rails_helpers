@@ -1,6 +1,7 @@
 # SEO Rails Helpers
 
 [![Gem Version](https://badge.fury.io/rb/seo_rails_helpers.svg)](http://badge.fury.io/rb/seo_rails_helpers) [![Build Status](https://travis-ci.org/rubysamurai/seo_rails_helpers.svg?branch=master)](https://travis-ci.org/rubysamurai/seo_rails_helpers)
+[![Code Climate](https://codeclimate.com/github/rubysamurai/seo_rails_helpers/badges/gpa.svg)](https://codeclimate.com/github/rubysamurai/seo_rails_helpers)
 
 Collection of view helpers to improve search engine optimization of Ruby on Rails application.
 
