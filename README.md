@@ -1,3 +1,5 @@
+[![Gem Version](https://badge.fury.io/rb/seo_rails_helpers@2x.png)](http://badge.fury.io/rb/seo_rails_helpers)
+
 # SEO Rails Helpers
 
 Collection of view helpers to improve search engine optimization of Ruby on Rails application.
