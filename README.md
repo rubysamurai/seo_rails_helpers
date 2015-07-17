@@ -71,6 +71,53 @@ Will produce following title element:
 <title>Example Page &gt; Example Site</title>
 ```
 
+### 2. seo_meta_description
+
+This helper will create and insert meta element to specify description. Unlike `seo_page_title`, it produces meta description only when corresponding page explicitly sent it via either `content_for` or `provide`. Reason for such behavior - having any kind of default meta description is considered a bad SEO practice and may result in search engine ranking penalty.
+
+Include `seo_meta_description` in the `<head>` section of your layout
+
+ERB example:
+```erb
+<head>
+  <%= seo_meta_description %>
+  <%# other elements %>
+</head>
+```
+
+Haml example:
+```haml
+%head
+  seo_meta_description
+  -# other elements
+```
+
+This will create HTML title element like:
+```html
+<meta name="description" content="Example meta description" />
+```
+
+#### seo_meta_description options
+
+| Name | Description | Default
+| ----------- | ------------------------|-----------
+| ```:description```| Identifier for stored meta description. Specify symbol representing identifier in your ```provide``` or ```content_for``` method. | ```:description```
+
+#### example seo_meta_description usage
+
+```ruby
+provide(:meta_description, 'Custom meta description')
+```
+
+```ruby
+seo_meta_description(description: :meta_description)
+```
+
+Will produce following title element:
+```html
+<meta name="description" content="Custom meta description" />
+```
+
 ## Contributing
 
 Fork the project and submit a pull request.
