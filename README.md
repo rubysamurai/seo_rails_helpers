@@ -7,6 +7,8 @@ Collection of view helpers to improve search engine optimization of Ruby on Rail
 
 ## Installation
 
+SEO Rails Helpers requires Ruby version >=1.9.3.
+
 Add this line to your Rails application's Gemfile:
 
 ```ruby
